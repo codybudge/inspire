@@ -5,7 +5,7 @@ function WeatherController(){
 		var getTemp = weather.main.temp;
 		var temp = Math.floor(getTemp * 9/5 - 459.67);
 		var template =  `
-			<h1>Your temperature is ${temp}F</h1>
+			<h1>Your temperature is ${temp}°</h1>
 			`
 		
 		document.getElementById('weather').innerHTML = template
