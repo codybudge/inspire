@@ -1,14 +1,53 @@
-body{
-    color: rgb(83, 192, 187)
-}
-.clock{
-    font-size: 7rem
-}
+
+
 .container-fluid{
     background-size: cover;
     height: 100%; 
     background-position: center; 
 }
+
+.clock{
+    font-size: 10rem;
+    background: rgba(255, 255, 255, 0.644);
+    color: rgb(50, 79, 90);
+    border-radius: .5rem
+}
 .list{
     list-style-type: none;
+    color: rgb(156, 189, 207);
+    background: rgba(0, 0, 0, 0.472);
+    font-size: 2rem;
+    margin-left: 4.5rem;
+    border-radius: .5rem;
+    margin-right: 4.5rem
+}
+.weather{
+    color: rgb(156, 189, 207);
+    background: rgba(0, 0, 0, 0.472);
+    font-size: 10rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+    border-radius: .5rem
+}
+.marg{
+    margin-top: 38rem
+}
+.quote{
+    font-size: 3rem;
+    background: rgba(255, 255, 255, 0.644);
+    color: rgb(50, 79, 90);
+    border-radius: .5rem
+}
+.form{
+    background: rgba(255, 255, 255, 0.644);
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: .5rem;
+}
+.btn{
+    color:rgb(156, 189, 207);
+    background:rgba(0, 0, 0, 0.657);
+}
+input#checkbox{
+    background: rgba(255, 255, 255, 0.644); 
+    color: rgb(50, 79, 90);
 }

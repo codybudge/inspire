@@ -11,28 +11,28 @@
 
 <body id="body">
 	<section class="container-fluid" id="bgImg">
-		
-		
+
+
 		<form onsubmit=""></form>
 		<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-			<input type="text" name="description" placeholder="What do you want to do?">
-			<button type="submit">Submit</button>
+			<input class="form" type="text" name="description" placeholder="What will you do?">
+			<button class="btn" type="submit">Submit</button>
 		</form>
 		<div class="row">
-			<div class="col" id="todo">
+			<div class="col list" id="todo">
 				<!-- <li></li> -->
 				<!-- <button onclick="app.controllers.todoController.removeTodo">delete</button> -->
 			</div>
 			<div class=" clock col clock d-flex justify-content-center "></div>
-													<div class="col d-flex justify-content-end" id="weather">
-														<!-- <h1>Temp:</h1> -->
-													</div>
-		</div>
-		<div class="row"></div>
-				<div class="col d-flex align-items-end" id="quote">
-					<!-- <h1></h1> -->
-				</div>
+			<div class="weather d-flex align-items-center" id="weather">
+				<!-- <h1>Temp:</h1> -->
 			</div>
+		</div>
+		<div class="row marg"></div>
+		<div class=" quote col d-flex align-items-center" id="quote">
+			<!-- <h1></h1> -->
+		</div>
+		</div>
 	</section>
 
 

@@ -4,7 +4,8 @@ function QuoteController(){
 
 	function drawQuote(quote){
 		var template = `
-		<h4>${quote.quote}</h4>
+		<h3>${quote.quote}</h3>
+		<hr>
 		<h5>${quote.author}</h5>
 		`;	
 		document.getElementById('quote').innerHTML = template
