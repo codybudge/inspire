@@ -20,13 +20,13 @@ function TodoController() {
 			const todo = todos[i];
 			if(!todo.completed){template += `
 			<li><input onclick='app.controllers.todoController.toggleTodoStatus("${todo._id}")'id="checkBox" type="checkbox">${todo.description}
-			<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
+			<button class="btn2" onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
 			</li>
 			`
 		}else{
 			template += `
 			<li><input onclick='app.controllers.todoController.toggleTodoStatus("${todo._id}")'id="checkBox" type="checkbox" checked><strike>${todo.description}</strike>
-			<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
+			<button class="btn2" onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
 			</li>
 			`
 		}

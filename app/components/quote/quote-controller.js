@@ -4,7 +4,7 @@ function QuoteController(){
 
 	function drawQuote(quote){
 		var template = `
-		<h3>${quote.quote}</h3>
+		<h3>"${quote.quote}"</h3>
 		<hr>
 		<h5>${quote.author}</h5>
 		`;	
