@@ -9,27 +9,11 @@ function TodoController() {
 	var todoService = new TodoService()
 
 	
+	
 	function getTodos(){
 		todoService.getTodos(draw)
 	}
 	getTodos()
-//start clock------
-function clock(){
-	var time = new Date(),
-
-	hours = time.getHours(),
-	minutes = time.getMinutes();
-
-	document.querySelectorAll('.clock')[0].innerHTML=harold(hours) + ":" + harold(minutes);
-	function harold(standIn){
-		if(standIn < 10) {
-			standIn = '0' + standIn
-		}
-		return standIn;
-	}
-}
-setInterval(clock, 1000);
-//end of clock-------------
 	function draw(todos) {
 		var template = '<ul>';
 		for (let i = 0; i < todos.length; i++) {
@@ -57,9 +41,8 @@ setInterval(clock, 1000);
 	}
 
 	this.toggleTodoStatus = function (todoId,get) {
-		// asks the service to edit the todo status
 		todoService.toggleTodoStatus(todoId, getTodos)
-		// YEP THATS IT FOR ME
+		
 	}
 
 	this.removeTodo = function (todoId) {

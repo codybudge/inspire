@@ -30,7 +30,7 @@ function TodoService() {
 	this.toggleTodoStatus = function (todoId) { 
 		// MAKE SURE WE THINK THIS ONE THROUGH
 		//STEP 1: Find the todo by its index **HINT** todoList
-		var todoList = todo.completed = !todo.completed
+		
 
 		//STEP 2: Change the completed flag to the opposite of what it is **HINT** todo.completed = !todo.completed
 
