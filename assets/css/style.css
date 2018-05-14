@@ -1,0 +1,8 @@
+.clock{
+    font-size: 7rem
+}
+.container-fluid{
+    background-size: cover;
+    height: 100%; 
+    background-position: center; 
+}

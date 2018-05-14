@@ -3,7 +3,8 @@ function ImageController() {
 var imageService = new ImageService();
 
 function drawImage(imgInfo){
-	document.body.style.backgroundImage = `url('${imgInfo.url}')`;
+	document.getElementById('bgImg').style.backgroundImage = `url('${imgInfo.url}')`;
+	console.log(imgInfo.url)
 }
 
  function getImage(){

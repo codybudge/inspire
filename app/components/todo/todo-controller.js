@@ -13,7 +13,7 @@ function TodoController() {
 		todoService.getTodos(draw)
 	}
 	getTodos()
-
+//start clock------
 function clock(){
 	var time = new Date(),
 
@@ -29,7 +29,7 @@ function clock(){
 	}
 }
 setInterval(clock, 1000);
-
+//end of clock-------------
 	function draw(todos) {
 		var template = '<ul>';
 		for (let i = 0; i < todos.length; i++) {
