@@ -1,3 +1,6 @@
+body{
+    color: rgb(83, 192, 187)
+}
 .clock{
     font-size: 7rem
 }
@@ -5,4 +8,7 @@
     background-size: cover;
     height: 100%; 
     background-position: center; 
+}
+.list{
+    list-style-type: none;
 }

@@ -4,7 +4,6 @@ var imageService = new ImageService();
 
 function drawImage(imgInfo){
 	document.getElementById('bgImg').style.backgroundImage = `url('${imgInfo.url}')`;
-	console.log(imgInfo.url)
 }
 
  function getImage(){

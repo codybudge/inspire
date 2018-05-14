@@ -15,17 +15,25 @@ function TodoController() {
 	}
 	getTodos()
 	function draw(todos) {
-		var template = '<ul>';
+		var template = '<ul class="list">';
 		for (let i = 0; i < todos.length; i++) {
 			const todo = todos[i];
+			if(!todo.completed){template += `
+			<li><input onclick='app.controllers.todoController.toggleTodoStatus("${todo._id}")'id="checkBox" type="checkbox">${todo.description}
+			<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
+			</li>
+			`
+		}else{
 			template += `
-			<li type="checkbox">${todo.description}
-			<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">delete</button>
+			<li><input onclick='app.controllers.todoController.toggleTodoStatus("${todo._id}")'id="checkBox" type="checkbox" checked><strike>${todo.description}</strike>
+			<button onclick="app.controllers.todoController.removeTodo('${todo._id}')">x</button>
 			</li>
 			`
 		}
+	}
 		template += '</ul>'
 	document.getElementById('todo').innerHTML = template
+	console.log(todos)
 	}
 
 	this.addTodoFromForm = function (e) {
@@ -37,7 +45,7 @@ function TodoController() {
 
 		
 		todoService.addTodo(todo, getTodos)
-		                        
+		
 	}
 
 	this.toggleTodoStatus = function (todoId,get) {
