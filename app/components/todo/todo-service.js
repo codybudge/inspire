@@ -24,7 +24,6 @@ function TodoService() {
 				cb(res) //
 			}) 
 			.fail(logError)
-
 	}
 
 	this.toggleTodoStatus = function (todoId, cb) { 

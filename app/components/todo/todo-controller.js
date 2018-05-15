@@ -10,12 +10,17 @@ function TodoController() {
 
 	
 	
+	
 	function getTodos(){
 		todoService.getTodos(draw)
 	}
+	
+	var todoCount = 0
 	getTodos()
 	function draw(todos) {
-		var template = '<ul class="list">';
+		todoCount = todos.length;
+		var template = `<div>${todoCount} to do's</div>
+		<ul class="list">`;
 		for (let i = 0; i < todos.length; i++) {
 			const todo = todos[i];
 			if(!todo.completed){template += `
@@ -45,7 +50,7 @@ function TodoController() {
 
 		
 		todoService.addTodo(todo, getTodos)
-		
+		form.reset()
 	}
 
 	this.toggleTodoStatus = function (todoId,get) {
